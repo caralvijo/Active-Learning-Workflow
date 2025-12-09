@@ -151,7 +151,7 @@ done
 ```
 
 ## Diagrama del Pipeline
-A continuación se presenta un diagrama simplificado en formato ASCII:
+
 
 ```
      +---------------------------+
