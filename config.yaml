@@ -1,0 +1,31 @@
+# --------------------------------------------------------------
+# File: config.yaml
+# --------------------------------------------------------------
+"""
+# Configuración principal del workflow
+system:
+name: Li_fcc
+element: Li
+base_structure: POSCAR_base.vasp # ruta a la POSCAR de la supercelda base
+md:
+temperature: 600.0
+pressure: 1.0
+timestep_fs: 1.0
+nsteps: 5000 # pasos MD para cada iteracion (ajusta)
+ensemble:
+n_models: 5
+checkpoints_dir: models/ensemble
+paths:
+pool_dir: data/pool_candidates
+labeled_dir: data/dft_labels
+dft_submit_dir: data/dft_submit
+logs: logs
+dft:
+vasp:
+incar_template: dft_templates/INCAR
+kpoints_template: dft_templates/KPOINTS
+potcar_dir: /path/to/POTCARs
+pseudo: Li # clave de pseudopotencial en tu potcar_dir
+selection:
+top_k: 10
+"""
