@@ -1,50 +1,43 @@
-# Auxiliary files for Active-Learning-Nequix-Workflow
+# -----------------------------
 # File: configs/config.yaml
 # -----------------------------
 """
 # Configuration file for Active-Learning-Nequix-Workflow
 system:
-name: Li_fcc
-base_structure: data/initial/initial_POSCAR.vasp
-
+  name: Li_fcc
+  base_structure: data/initial/initial_POSCAR.vasp
 
 paths:
-pool_dir: data/pool_candidates
-dft_submit_dir: data/dft_submit
-labeled_dir: data/dft_labels
-logs: logs
-
+  pool_dir: data/pool_candidates
+  dft_submit_dir: data/dft_submit
+  labeled_dir: data/dft_labels
+  logs: logs
 
 md:
-temperature: 600.0
-pressure: 1.0
-timestep_fs: 1.0
-nsteps: 5000
-
+  temperature: 600.0
+  pressure: 1.0
+  timestep_fs: 1.0
+  nsteps: 5000
 
 ensemble:
-n_models: 5
-# Either list explicit paths, or set a directory and pattern
-model_paths: []
-checkpoints_dir: models/cycle_00
-
+  n_models: 5
+  # Either list explicit paths, or set a directory and pattern
+  model_paths: []
+  checkpoints_dir: models/cycle_00
 
 selection:
-top_k: 20
-var_weight_energy: 1.0
-var_weight_forces: 1.0
-
+  top_k: 20
+  var_weight_energy: 1.0
+  var_weight_forces: 1.0
 
 vasp:
-incar_template: templates/INCAR
-kpoints_template: templates/KPOINTS
-potcar_dir: templates/POTCAR
-pseudo: POTCAR_Li
-nproc: 16
-
+  incar_template: templates/INCAR
+  kpoints_template: templates/KPOINTS
+  potcar_dir: templates/POTCAR
+  pseudo: POTCAR_Li
+  nproc: 16
 
 train:
-train_script: scripts/train_nequix_model.sh
-
+  train_script: scripts/train_nequix_model.sh
 
 """
