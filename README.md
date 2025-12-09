@@ -192,4 +192,4 @@ A continuación se presenta un diagrama simplificado en formato ASCII:
 ```
 
 ## Contacto
-Para dudas, comentarios o sugerencias, el usuario puede modificar o extender libremente los módulos, así como abrir solicitudes de mejora en el repositorio.
+vital@estudiantes.fisica.unam.mx
