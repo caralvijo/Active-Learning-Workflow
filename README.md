@@ -3,33 +3,42 @@
 ## Resumen
 Este repositorio presenta un flujo de trabajo completo para la ejecución de ciclos de *active learning* orientados al entrenamiento de modelos basados en Nequix. El enfoque integra generación de configuraciones, evaluación con ensambles de modelos, detección de alta incertidumbre y retroalimentación mediante cálculos de primeros principios. El objetivo es proporcionar una plataforma reproducible, modular y extensible para ampliar bases de datos atómicas y optimizar modelos de predicción de energías y fuerzas.
 
+# Estructura del repositorio
+
 Active-Learning-Nequix-Workflow/
 │
-├── Active-Learning-Nequix-Workflow.py     ← SCRIPT PRINCIPAL (va en el raíz)
+├── Active-Learning-Nequix-Workflow.py
+│ ← Script principal del pipeline de Active Learning
 │
 ├── configs/
-│   └── config.yaml
+│ └── config.yaml
+│ ← Archivo de configuración global (rutas, parámetros, VASP, MD, Nequix)
 │
 ├── scripts/
-│   ├── launch_dft.sh
-│   ├── run_committee_inference.py
-│   ├── select_high_uncertainty.py
-│   ├── merge_dataset.py
-│   ├── validate_models.py
-│   └── train_nequix_model.sh
+│ ├── launch_dft.sh
+│ ├── run_committee_inference.py
+│ ├── select_high_uncertainty.py
+│ ├── merge_dataset.py
+│ ├── validate_models.py
+│ └── train_nequix_model.sh
+│ ← Scripts auxiliares para automatizar cada fase del pipeline
 │
 ├── data/
-│   ├── initial_structures/
-│   ├── training_set/
-│   ├── query_set/
-│   └── dft_results/
+│ ├── initial_structures/
+│ ├── training_set/
+│ ├── query_set/
+│ └── dft_results/
+│ ← Directorios para almacenar datos del ciclo de Active Learning
 │
 ├── models/
-│   ├── model_01/
-│   ├── model_02/
-│   ├── ...
+│ ├── model_01/
+│ ├── model_02/
+│ ├── ...
+│ ← Modelos entrenados del comité Nequix
 │
 └── README.md
+← Documentación principal del proyecto
+
 
 
 ## Descripción General del Método
