@@ -3,7 +3,7 @@
 ## Resumen
 Este repositorio presenta un flujo de trabajo completo para la ejecución de ciclos de *active learning* orientados al entrenamiento de modelos basados en Nequix. El enfoque integra generación de configuraciones, evaluación con ensambles de modelos, detección de alta incertidumbre y retroalimentación mediante cálculos de primeros principios. El objetivo es proporcionar una plataforma reproducible, modular y extensible para ampliar bases de datos atómicas y optimizar modelos de predicción de energías y fuerzas.
 
-# Estructura del repositorio
+## Estructura del repositorio
 
 ```markdown
 Active-Learning-Nequix-Workflow/
