@@ -5,6 +5,7 @@ Este repositorio presenta un flujo de trabajo completo para la ejecución de cic
 
 # Estructura del repositorio
 
+```markdown
 Active-Learning-Nequix-Workflow/
 │
 ├── Active-Learning-Nequix-Workflow.py
@@ -38,7 +39,7 @@ Active-Learning-Nequix-Workflow/
 │
 └── README.md
 ← Documentación principal del proyecto
-
+```
 
 
 ## Descripción General del Método
