@@ -3,6 +3,35 @@
 ## Resumen
 Este repositorio presenta un flujo de trabajo completo para la ejecución de ciclos de *active learning* orientados al entrenamiento de modelos basados en Nequix. El enfoque integra generación de configuraciones, evaluación con ensambles de modelos, detección de alta incertidumbre y retroalimentación mediante cálculos de primeros principios. El objetivo es proporcionar una plataforma reproducible, modular y extensible para ampliar bases de datos atómicas y optimizar modelos de predicción de energías y fuerzas.
 
+Active-Learning-Nequix-Workflow/
+│
+├── Active-Learning-Nequix-Workflow.py     ← SCRIPT PRINCIPAL (va en el raíz)
+│
+├── configs/
+│   └── config.yaml
+│
+├── scripts/
+│   ├── launch_dft.sh
+│   ├── run_committee_inference.py
+│   ├── select_high_uncertainty.py
+│   ├── merge_dataset.py
+│   ├── validate_models.py
+│   └── train_nequix_model.sh
+│
+├── data/
+│   ├── initial_structures/
+│   ├── training_set/
+│   ├── query_set/
+│   └── dft_results/
+│
+├── models/
+│   ├── model_01/
+│   ├── model_02/
+│   ├── ...
+│
+└── README.md
+
+
 ## Descripción General del Método
 El método sigue un esquema iterativo clásico de *active learning*, estructurado en cuatro componentes principales:
 
